@@ -1,14 +1,13 @@
-package com.kakaopay.payment.web.dto;
+package com.kakaopay.payment.web.dto.payments;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
 @AllArgsConstructor
-public class PaymentsRequestDto {
+public class PaymentsSaveRequestDto {
 
     private final String cardNumber;
 

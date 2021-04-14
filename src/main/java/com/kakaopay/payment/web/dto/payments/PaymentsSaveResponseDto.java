@@ -1,13 +1,11 @@
-package com.kakaopay.payment.web.dto;
+package com.kakaopay.payment.web.dto.payments;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
-@AllArgsConstructor
-public class PaymentsResponseDto {
+public class PaymentsSaveResponseDto {
 
     private final Long idx;
 
