@@ -1,9 +1,11 @@
 package com.kakaopay.payment.web.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 
+@Getter
 public class ApiResponse<T> {
 
     private final ApiResult result;
@@ -37,6 +39,7 @@ public class ApiResponse<T> {
         return new ApiResponse<>(null, new ApiResult(status, errorMessage));
     }
 
+    @Getter
     @NoArgsConstructor
     public static class ApiResult {
 
@@ -53,7 +56,7 @@ public class ApiResponse<T> {
         }
 
         ApiResult(HttpStatus status, String desc) {
-            this.code = String.valueOf((status.value()));
+            code = String.valueOf((status.value()));
             this.desc = desc;
         }
     }
