@@ -1,4 +1,4 @@
-package com.kakaopay.payment.domain;
+package com.kakaopay.payment.domain.payments;
 
 import com.kakaopay.payment.domain.audit.BaseTime;
 
@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Payment extends BaseTime {
+public class Payments extends BaseTime {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
