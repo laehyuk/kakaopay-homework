@@ -1,4 +1,4 @@
-package com.kakaopay.payment.web.controller;
+package com.kakaopay.payment.web.controller.payments;
 
 import com.kakaopay.abstracts.AbstractWebMvcTest;
 import org.junit.jupiter.api.DisplayName;
